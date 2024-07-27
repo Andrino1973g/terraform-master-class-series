@@ -110,6 +110,7 @@
 NOTE: to call a module from github with no specific version (it will download the latest), just run as in example below:
 
 module "s3" {
+    
     source = "git::module repo"
 
     topic name = "wema-topic"
@@ -120,6 +121,7 @@ module "s3" {
 But to call a module from github with a specific version (e.g v1.1.0), just run as in example below:
 
 module "s3" {
+    
     source = "git::module repo?ref=v1.1.0"
 
     topic name = "wema-topic"
