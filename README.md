@@ -104,3 +104,26 @@
 - local state data source
 
 ## 10. Terraform best practices && Interview question
+
+
+
+NOTE: to call a module from github with no specific version (it will download the latest), just run as in example below:
+
+module "s3" {
+    source = "git::module repo"
+
+    topic name = "wema-topic"
+    team       = "cloud"
+    my-bucket  = "devops"
+    evn        = "prod"
+    }
+But to call a module from github with a specific version (e.g v1.1.0), just run as in example below:
+
+module "s3" {
+    source = "git::module repo?ref=v1.1.0"
+
+    topic name = "wema-topic"
+    team       = "cloud"
+    my-bucket  = "devops"
+    evn        = "prod"
+    }
