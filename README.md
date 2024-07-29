@@ -129,3 +129,5 @@ module "s3" {
     my-bucket  = "devops"
     evn        = "prod"
     }
+
+    Note also the to get any attribute from a module you have to create an output for it.
